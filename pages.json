@@ -1,0 +1,185 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarBackgroundColor": "#C4D5FA",
+				"enablePullDownRefresh": true
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/index/orderDet",
+			"style": {
+				"navigationBarTitleText": "个人简介"
+			}
+		},
+		{
+			"path": "pages/jobhunt/index",
+			"style": {
+				"navigationBarTitleText": "求职",
+				"navigationBarBackgroundColor": "#C4D5FA",
+				"enablePullDownRefresh": true
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/jobhunt/detail",
+			"style": {
+				"navigationBarTitleText": "职位详情"
+			}
+		},
+		{
+			"path": "pages/blackBoss/index",
+			"style": {
+				"navigationBarTitleText": "黑老板",
+				"navigationBarBackgroundColor": "#C4D5FA",
+				"enablePullDownRefresh": true
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#C4D5FA",
+				"enablePullDownRefresh": false
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif
+			}
+		},
+		{
+			"path": "pages/fabu/index",
+			"style": {
+				"navigationBarTitleText": "发布",
+				"navigationBarBackgroundColor": "#C4D5FA",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "my",
+		"pages": [{
+				"path": "fabu/fabu",
+				"style": {
+					"navigationBarTitleText": "发布招聘",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "fabu/qiuzhi",
+				"style": {
+					"navigationBarTitleText": "发布求职",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "renzheng/index",
+				"style": {
+					"navigationBarTitleText": "企业实名",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "resume/resume",
+				"style": {
+					"navigationBarTitleText": "我的简历",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "resume/add",
+				"style": {
+					"navigationBarTitleText": "我的简历",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "renzheng/user",
+				"style": {
+					"navigationBarTitleText": "个人实名",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "city/city",
+				"style": {
+					"navigationBarTitleText": "选择城市",
+					"enablePullDownRefresh": false
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "省钱兄家政",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#CCCCCC",
+		"selectedColor": "#6696FF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index"
+			},
+			{
+				"pagePath": "pages/jobhunt/index"
+			},
+			{
+				"pagePath": "pages/fabu/index"
+			},
+			{
+				"pagePath": "pages/blackBoss/index"
+			},
+			{
+				"pagePath": "pages/my/index"
+			}
+		]
+	}
+}
